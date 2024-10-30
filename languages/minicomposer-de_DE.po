@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"X-Generator: Poedit 1.8.1\n"
+
+msgid "Column-Padding"
+msgstr "Spalten-Innenabstand (padding)"
+
+msgid "Column-Min-Height"
+msgstr "Spalten-Mindeshöhe"
+
+msgid "Column-Margin-Bottom"
+msgstr "Spalten-Abstand-Unten"
+
+msgid "Row-Margin-Bottom"
+msgstr "Zeilen-Abstand-Unten"
+
+msgid "Use bootstrap instead of foundation"
+msgstr "Verwende Bootstrap anstatt Foundation"
+
+msgid "CSS-Class"
+msgstr "CSS-Klasse"
+
+msgid "Padding"
+msgstr "Innenabstand (padding)"
+
+msgid "Gutter"
+msgstr "Außenabstand (gutter)"
+
+msgid "Background"
+msgstr "Hintergrund"
+
+msgid "min-height"
+msgstr "Mindesthöhe"
+
+msgid "Select image"
+msgstr "Bild auswählen"
+
+msgid "Color"
+msgstr "Farbe"
+
+msgid "Image"
+msgstr "Bild"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "Clone"
+msgstr "Klonen"
+
+msgid "Row"
+msgstr "Zeile"
+
+msgid "Column"
+msgstr "Spalte"
+
+msgid "Columns"
+msgstr "Spalten"
+
+msgid "Only for admin-view"
+msgstr "Nur für Administration-Ansicht"
+
+msgid "Column-Style for admin"
+msgstr "Spalten-Style für Administration"
+
+msgid "Column-Font for admin"
+msgstr "Spalten-Schrift für Administration"
+
+msgid "Expert-Settings"
+msgstr "Experten-Einstellungen"
+
+msgid "Load Foundation/Bootstrap from CDN (only use if your theme doesn't already include it)"
+msgstr "Lade Foundation/Bootstrap von CDN (nur verwenden falls dein Theme es nicht bereits einbindet)"
+
+msgid "Use <b>right-click</b> on the columns/rows for more options."
+msgstr "Benutze <b>Rechtsklick</b> auf die Spalten/Zeilen für mehr Optionen."
+
+msgid "Edit Text"
+msgstr "Text bearbeiten"
+
+msgid "Add column"
+msgstr "Spalte hinzufügen"
+
+msgid "To admin"
+msgstr "Zur Admin"
+
+msgid "Title from"
+msgstr "Titel von"
+

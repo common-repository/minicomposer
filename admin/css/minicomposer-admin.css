@@ -1,0 +1,547 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/* hide post-content-editor */
+#postdivrich {
+  display: none;
+}
+
+.input-type-hidden {
+  display: none;
+}
+
+.minicomposer-add-row {
+  margin-right: 25px !important;
+}
+
+.minicomposer-autopublish {
+  margin-left: 25px !important;
+}
+
+.minicomposer-sortable-rows {
+  position: relative;
+  margin: 1em 0;
+  width: 100%;
+}
+
+.minicomposer-column {
+  display: block;
+  position: relative;
+  float: left;
+  min-width: calc(100% / 12);
+  max-width: 100%;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-sizing: border-box;
+  box-sizing: border-box;
+
+  margin-bottom: 10px;
+}
+
+.minicomposer-column .column-bg {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.minicomposer-row > .row-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.minicomposer-column .minicomposer-row > .row-bg {
+  content: '';
+  border: 1px dotted blue;
+  background-color: #ddd;
+  top: 5px;
+  left: 13px;
+  right: 13px;
+  bottom: 10px;
+}
+
+.minicomposer-row .minicomposer-row {
+  background-color: transparent;
+  z-index: 100;
+}
+
+.minicomposer-column .content {
+  display: inline-block;
+  position: relative;
+
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+
+  vertical-align: top;
+  margin-bottom: 10px;
+
+  padding: 5px;
+
+  overflow: hidden;
+
+  font-size: 12px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-sizing: border-box;
+  box-sizing: border-box;
+
+  z-index: 100;
+}
+
+.minicomposer-column .content p {
+  margin-top: 0;
+}
+
+.minicomposer-column .content img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.minicomposer-column .ui-resizable-e {
+  right: 2px;
+}
+
+.minicomposer-column .ui-resizable-s {
+  bottom: 3px;
+}
+
+.minicomposer-column .ui-resizable-handle {
+  z-index: 9999 !important;
+}
+
+.minicomposer-row {
+  position: relative;
+  min-height: 60px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+  padding: 20px 15px 10px;
+  font-size: 0;
+
+  z-index: 50;
+}
+
+.minicomposer-row:after {
+  content: '';
+  clear: left;
+  display: block;
+}
+
+/** column options */
+.minicomposer-sortable-rows .column-class,
+.minicomposer-sortable-rows .column-count {
+  position: absolute;
+  bottom: 100%;
+  left: 6px;
+  margin-bottom: -5px;
+  width: auto;
+
+  line-height: 8px;
+  text-align: right;
+
+  padding: 2px 4px 2px;
+  background-color: #eee;
+  font-size: 10px;
+
+  white-space: nowrap;
+}
+
+.minicomposer-sortable-rows .column-class {
+  left: auto;
+  right: 6px;
+}
+
+.sublabel {
+  display: inline-block;
+  width: 80px;
+}
+
+/** upload image **/
+.upload-preview-image {
+  display: block;
+  max-height: 60px;
+  width: auto !important;
+  vertical-align: top;
+}
+
+.upload-preview-image:hover {
+  max-height: 300px;
+  max-width: 100%;
+}
+
+/** overlay **/
+.composer-overlay.visible {
+  display: block;
+}
+
+.composer-overlay {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #aaa;
+  min-width: 400px;
+
+  z-index: 10000;
+}
+
+.composer-overlay .headline {
+  position: relative;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: default;
+}
+
+.global-style-settings {
+  min-width: 528px;
+}
+
+#minicomposer {
+  z-index: 50;
+}
+
+#minicomposer .minicomposer-sortable-rows {
+  max-width: 1000px;
+}
+
+#minicomposer.small-size .minicomposer-sortable-rows {
+  max-width: 480px;
+}
+
+#minicomposer.large-size .minicomposer-sortable-rows {
+  max-width: none;
+}
+
+.minicomposer-change-size-button:before {
+  font-family: 'Dashicons';
+  content: "\f547";
+}
+
+#minicomposer .minicomposer-change-size-button[data-size="small"]:before {
+  content: "\f470";
+}
+
+#minicomposer .minicomposer-change-size-button[data-size="large"]:before {
+  content: "\f472";
+}
+
+.minicomposer-change-size-button.button.active:hover,
+.minicomposer-change-size-button.button.active {
+  background-color: #0085ba;
+  color: #fff;
+}
+
+#minicomposer .inside {
+  display: block !important;
+}
+
+#post-gallery-pictures {
+  z-index: 20;
+}
+
+#composer_global_editor_ifr {
+  min-height: 350px;
+}
+
+.minicomposer-column.dragging,
+.minicomposer-row.dragging {
+  opacity: 0.6;
+}
+
+
+.minicomposer-column.dragover:before,
+.minicomposer-column.dragover:before {
+  content: '';
+  position:absolute;
+  top: 5px;
+  bottom: 5px;
+  width: 5px;
+}
+
+.minicomposer-column.dragover-left:before,
+.minicomposer-column.dragover-right:before {
+  background-color: green;
+}
+
+.minicomposer-column.dragover-left:before {
+  left: -2px;
+}
+
+.minicomposer-column.dragover-right:before {
+  right: -2px;
+}
+
+.minicomposer-column.dragover-insert {
+  outline: 1px solid green;
+}
+
+.minicomposer-row.dragover:before {
+  content: '';
+  position:absolute;
+  background-color: green;
+  height: 5px;
+  left: 0px;
+  right: 0px;
+}
+
+.minicomposer-row.dragover-insert:before {
+  bottom: 10px;
+  left: 5px;
+  right: 5px;
+}
+
+.minicomposer-row.dragover-top:before {
+  top: -10px;
+}
+
+.minicomposer-row.dragover-bottom:before {
+  bottom: -10px;
+}
+
+.minicomposer-column img.aligncenter {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+/** selectable images **/
+.selectable-image {
+  display: inline-block;
+  width: 91px;
+  height: 91px;
+  margin: 0 5px 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #333;
+  background-position: center;
+
+  cursor: pointer;
+}
+
+.selectable-image::after {
+  content: attr(title);
+  position: relative;
+  display: block;
+  margin-top: 100%;
+  font-size: 9px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.selectable-image.active {
+  box-shadow: 0 0 0 2px darkseagreen;
+}
+.selectable-image.active::after {
+  background-color: darkseagreen;
+}
+
+.input-background-container {
+  position: relative;
+}
+
+.img-list {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: -210px;
+  right: 0;
+  max-height: 300px;
+
+  padding: 10px 5px 5px;
+
+  background-color: #ccc;
+
+  overflow: auto;
+}
+
+.input-background-container:hover .img-list {
+  display: block;
+}
+
+/** contextmenu **/
+.global-contextmenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+
+  line-height: 16px;
+  font-size: 8px;
+
+  z-index: 99999;
+}
+
+.global-contextmenu.open {
+  display: block;
+}
+
+.global-contextmenu span {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 4px 0;
+}
+
+.minicomposer-add-column-to-row,
+.minicomposer-row > .global-contextmenu span {
+  display: none;
+}
+
+.minicomposer-row > .global-contextmenu .minicomposer-style-settings,
+.minicomposer-row > .global-contextmenu .minicomposer-add-column-to-row,
+.minicomposer-row > .global-contextmenu .minicomposer-clone,
+.minicomposer-row > .global-contextmenu .minicomposer-copy,
+.minicomposer-row > .global-contextmenu .minicomposer-insert,
+.minicomposer-row > .global-contextmenu .minicomposer-delete {
+  display: block;
+}
+
+.ref-row .hide-on-row {
+  display: none !important;
+}
+.ref-column .hide-on-column {
+  display: none !important;
+}
+
+.has-style-open,
+.has-responsive-open,
+.has-editor-open,
+.has-contextmenu {
+  z-index: 120 !important;
+}
+
+.has-style-open:before,
+.has-responsive-open:before,
+.has-editor-open:before,
+.has-contextmenu:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 2px dotted blueviolet;
+  z-index: 10 !important;
+}
+
+.minicomposer-info:before {
+  content: '!';
+  display: inline-block;
+  border: 1px solid #000;
+  margin-right: 3px;
+  padding: 0 7px;
+  font-weight: bold;
+}
+
+
+.is-contextmenu-parent {
+  z-index: 120 !important;
+}
+
+.global-mc-editor {
+  height: auto !important;
+}
+
+.global-mc-editor .mc-editor-inner {
+  position: relative;
+  z-index: 100;
+}
+
+.global-mc-editor .drag-handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+#minicomposer.small-size  .minicomposer-column[data-small="13"] {
+  opacity: 0.5;
+}
+
+#minicomposer.large-size .minicomposer-column[data-large="13"],
+#minicomposer.small-size .minicomposer-column[data-small="13"],
+#minicomposer.medium-size  .minicomposer-column[data-medium="13"],
+#minicomposer.large-size  .minicomposer-column[data-medium="13"]:not([data-large]) {
+  display: inline-block;
+  width: calc(100% / 12) !important;
+  min-height: 10px !important;
+  float: none;
+}
+
+#minicomposer.large-size .minicomposer-column[data-large="13"] .content,
+#minicomposer.small-size .minicomposer-column[data-small="13"] .content,
+#minicomposer.medium-size  .minicomposer-column[data-medium="13"] .content,
+#minicomposer.large-size  .minicomposer-column[data-medium="13"]:not([data-large])  .content {
+  max-height: 1.5em !important;
+  height: 1.5em !important;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+#minicomposer.large-size .minicomposer-column[data-large="13"] .column-bg,
+#minicomposer.small-size .minicomposer-column[data-small="13"] .column-bg,
+#minicomposer.medium-size  .minicomposer-column[data-medium="13"] .column-bg,
+#minicomposer.large-size  .minicomposer-column[data-medium="13"]:not([data-large])  .column-bg {
+  opacity: 0.5;
+}
+
+#minicomposer.large-size .minicomposer-column[data-large="13"] .minicomposer-hide-column,
+#minicomposer.small-size .minicomposer-column[data-small="13"] .minicomposer-hide-column,
+#minicomposer.medium-size  .minicomposer-column[data-medium="13"] .minicomposer-hide-column,
+#minicomposer.large-size  .minicomposer-column[data-medium="13"]:not([data-large]) .minicomposer-hide-column {
+  display: none;
+}
+
+.composer-overlay .drag-handle {
+  cursor: move;
+}
+
+.minicomposer-column .content iframe,
+.minicomposer-column .content video {
+  pointer-events: none;
+  background-color: #ccc;
+}
+
+.minicomposer-column .content a {
+  pointer-events: none;
+}
+
+.mc-icon-label::before {
+  content: "";
+  margin-right: 0 !important;
+  display: none;
+}
+
+.mc-icon-label .fa {
+  width: 20px;
+  text-align: left;
+}
+
+.minicomposer-delete.delete-image::after {
+  font-family: Dashicons;
+  content: "\f182";
+  cursor: pointer;
+}
